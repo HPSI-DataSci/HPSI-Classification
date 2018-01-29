@@ -57,7 +57,7 @@ Load "filtered_loans.csv" into a Pandas DataFrame called "filtered_loans" and in
 #%% Investigate Categorical Columns, the goal in this section is to have all the columns as numeric columns (int or float data type), and containing no missing values. We just dealt with the missing values, so let's now find out the number of columns that are of the object data type and then move on to process them into numeric form. Check the dtypes.value_counts() to see how many "object" types we have to deal with
 
 
-#%% We have 7 object columns that contain text which need to be converted into numeric features. Let's select just the object columns using the DataFrame method select_dtype, then display the head to get a better sense of how the values in each column are formatted.
+#%% We have 7 object columns that contain text which need to be converted into numeric features. Let's select just the object columns using the DataFrame method .select_dtypes(include=['object']), then display the head to get a better sense of how the values in each column are formatted.
 
 
 #%% Notice that revol_util column contains numeric values, but is formatted as object. We need to format revol_util as numeric values. Here's what we should do: Use the str.rstrip() string method to strip the right trailing percent sign (%). On the resulting Series object, use the astype() method to convert to the type float. Assign the new Series of float values back to the revol_util column in the filtered_loans.

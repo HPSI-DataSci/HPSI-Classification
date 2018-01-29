@@ -76,7 +76,7 @@ print("\n\nNumber of null values in each column:\n{}".format(null_counts))
 
 print("\n\nData types and their frequency\n{}".format(filtered_loans.dtypes.value_counts()))
 
-#%% We have 7 object columns that contain text which need to be converted into numeric features. Let's select just the object columns using the DataFrame method select_dtype, then display the head to get a better sense of how the values in each column are formatted.
+#%% We have 7 object columns that contain text which need to be converted into numeric features. Let's select just the object columns using the DataFrame method .select_dtypes(include=['object']), then display the head to get a better sense of how the values in each column are formatted.
 
 object_columns_df = filtered_loans.select_dtypes(include=['object'])
 print(object_columns_df.head())
