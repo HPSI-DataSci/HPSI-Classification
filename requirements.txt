@@ -1,0 +1,2 @@
+numpyscipypandasmatplotlibseabornscikit-learnscikit-imagetensorflowkeraspython-graphvizgraphvizpydotpydotplussympy
+spyder
