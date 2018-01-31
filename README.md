@@ -11,7 +11,7 @@ This guide will walk you through the steps to set up the virtual environment for
 Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.) in the same directory as 
 the course materials. Then, run the following command in your terminal to create the virtual environment: 
 ```commandline
-conda env create -f new_environment.yml
+conda env create -f windows_environment.yml
 ```
 
 When the environment has been created, you should see something like: 
