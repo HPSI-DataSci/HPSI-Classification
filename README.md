@@ -19,14 +19,14 @@ When the environment has been created, you should see something like:
 done
 #
 # To activate this environment, use:
-# > source activate HPSI-Classification
+# > activate HPSI-Classification
 #
 # To deactivate an active environment, use:
-# > source deactivate
+# > deactivate
 #
 ```
 
-Depending on your version of `conda`, this prompt could say `source activate` or `conda activate`. Run this command 
+Depending on your version of `conda`, this prompt could say `activate` or `conda activate`. Run this command 
 in the terminal to activate the virtual environment. Once the virtual environment has been activated, we need to 
 run the test script to ensure all the packages we need for the course have been installed and configured successfully. 
 You can run the script by entering the following command in your terminal: 
