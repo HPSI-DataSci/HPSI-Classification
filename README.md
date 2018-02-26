@@ -6,10 +6,17 @@ This repository contains all the course material for the classification course
 
 This guide will walk you through the steps to set up the virtual environment for the course. 
 
+The first step is to clone the repo either by clicking the green button in the top-right corner labeled `Clone or download` and selecting the `Download ZIP` option or by running `git clone https://github.com/HPSI-DataSci/HPSI-Classification.git` in your terminal. If you chose to download a ZIP file, then be sure to extract the contents by unzipping it. Next, move the directory for the repository to your desktop. 
+
+*****To get Started******
+
 ### Windows Instructions
 
-Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.) in the same directory as 
-the course materials. Then, run the following command in your terminal to create the virtual environment: 
+Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.). Navigate to the directory for the repository: 
+`
+cd C:\Users\User\Desktop\HPSI-Classification-Master
+`
+Note that you may have saved the directory with a different name, so you may have to change the last name in the path. Then, run the following command in your terminal to create the virtual environment: 
 ```commandline
 conda env create -f lmi_env.yml
 ```
@@ -56,8 +63,12 @@ If your environment is set up and running, you can deactivate it with either `so
 
 ### Mac Instructions
 
-Open up a terminal (Terminal/Anaconda Prompt/iTerm 2/etc.) in the same directory as 
-the course materials. Then, run the following command in your terminal to create the virtual environment: 
+Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.). Navigate to the directory for the repository: 
+`
+cd ~/Users/$USERNAME/Desktop/HPSI-Classification
+`
+where `$USERNAME` is the username for your user profile.
+Then, run the following command in your terminal to create the virtual environment: 
 ```commandline
 conda env create -f mac_environment.yml
 ```
