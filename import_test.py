@@ -7,19 +7,38 @@
 ## Day 1 -- Environment Test ##
 ###############################
 
-# list of packages installed in conda virtual env
-installed_packages = ['numpy', 'pandas', 'scipy', 'tensorflow', 'keras',
-                      'graphviz', 'pydot', 'pydotplus', 'seaborn', 'sklearn',
-                      'skimage', 'sympy']
-# dynamically import all packages
-packages = list(map(__import__, installed_packages))
+def test_packages(pkgs):
+    versions = []
+    for p in pkgs:
+        try:
+            imported = __import__(p)
+            try:
+                versions.append(imported.__version__)
+            except AttributeError:
+                try:
+                    versions.append(imported.version)
+                except AttributeError:
+                    try:
+                        versions.append(imported.version_info)
+                    except AttributeError:
+                        versions.append('0.0')
+        except ImportError:
+            versions.append('Fail')
+    return versions
 
-# list all imported packages and version numbers
-for i in range(len(packages)):
-    try:
-        print("{}={}".format(packages[i].__name__, packages[i].__version__))
-    except:
-        print("{}".format(packages[i].__name__))
-print('-' * 54)
-print("| Congrats! Your virtual environment is ready to go! |")
-print('-' * 54)
+packages = ['numpy', 'pandas', 'scipy', 'tensorflow', 'keras',
+            'graphviz', 'pydot', 'pydotplus', 'seaborn', 'sklearn',
+            'skimage', 'sympy']
+versions = test_packages(packages)
+
+for p, v in zip(packages, versions):
+    success = True
+    if v is not 'Fail':
+        print("[OK] {} {} is installed".format(p, v))
+    else:
+        print('[FAIL]: {} is not installed'.format(p))
+        success = False
+if success:
+    print('[SUCCESS] Your virtual environment is ready to go!')
+else:
+    print('[FAILURE] Please install the missing required packages')
