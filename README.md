@@ -11,7 +11,7 @@ This guide will walk you through the steps to set up the virtual environment for
 Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.) in the same directory as 
 the course materials. Then, run the following command in your terminal to create the virtual environment: 
 ```commandline
-conda env create -f windows_environment.yml
+conda env create -f lmi_env.yml
 ```
 
 When the environment has been created, you should see something like: 
@@ -36,21 +36,19 @@ python import_test.py
 You should see the following output from running the script: 
 ```
 Using TensorFlow backend.
-numpy=1.12.1
-pandas=0.22.0
-scipy=1.0.0
-tensorflow=1.1.0
-keras=2.1.2
-graphviz=0.5.2
-pydot=1.2.3
-pydotplus
-seaborn=0.8.1
-sklearn=0.19.1
-skimage=0.13.1
-sympy=1.1.1
-------------------------------------------------------
-| Congrats! Your virtual environment is ready to go! |
-------------------------------------------------------
+[OK] numpy 1.12.1 is installed
+[OK] pandas 0.22.0 is installed
+[OK] scipy 1.0.0 is installed
+[OK] tensorflow 1.1.0 is installed
+[OK] keras 2.1.2 is installed
+[OK] graphviz 0.5.2 is installed
+[OK] pydot 1.2.3 is installed
+[OK] pydotplus 0.0 is installed
+[OK] seaborn 0.8.1 is installed
+[OK] sklearn 0.19.1 is installed
+[OK] skimage 0.13.1 is installed
+[OK] sympy 1.1.1 is installed
+[SUCCESS] Your virtual environment is ready to go!
 ```
 
 If your environment is set up and running, you can deactivate it with either `source deactivate` or 
@@ -86,21 +84,19 @@ python import_test.py
 You should see the following output from running the script: 
 ```
 Using TensorFlow backend.
-numpy=1.12.1
-pandas=0.22.0
-scipy=1.0.0
-tensorflow=1.1.0
-keras=2.1.2
-graphviz=0.5.2
-pydot=1.2.3
-pydotplus
-seaborn=0.8.1
-sklearn=0.19.1
-skimage=0.13.1
-sympy=1.1.1
-------------------------------------------------------
-| Congrats! Your virtual environment is ready to go! |
-------------------------------------------------------
+[OK] numpy 1.12.1 is installed
+[OK] pandas 0.22.0 is installed
+[OK] scipy 1.0.0 is installed
+[OK] tensorflow 1.1.0 is installed
+[OK] keras 2.1.2 is installed
+[OK] graphviz 0.5.2 is installed
+[OK] pydot 1.2.3 is installed
+[OK] pydotplus 0.0 is installed
+[OK] seaborn 0.8.1 is installed
+[OK] sklearn 0.19.1 is installed
+[OK] skimage 0.13.1 is installed
+[OK] sympy 1.1.1 is installed
+[SUCCESS] Your virtual environment is ready to go!
 ```
 
 If your environment is set up and running, you can deactivate it with either `source deactivate` or 
