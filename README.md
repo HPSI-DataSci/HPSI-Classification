@@ -8,8 +8,6 @@ This guide will walk you through the steps to set up the virtual environment for
 
 The first step is to clone the repo either by clicking the green button in the top-right corner labeled `Clone or download` and selecting the `Download ZIP` option or by running `git clone https://github.com/HPSI-DataSci/HPSI-Classification.git` in your terminal. If you chose to download a ZIP file, then be sure to extract the contents by unzipping it. Next, move the directory for the repository to your desktop. 
 
-*****To get Started******
-
 ### Windows Instructions
 
 Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.). Navigate to the directory for the repository: 
