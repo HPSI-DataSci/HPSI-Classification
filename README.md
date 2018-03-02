@@ -6,11 +6,11 @@ This repository contains all the course material for the classification course
 
 This guide will walk you through the steps to set up the virtual environment for the course. 
 
-The first step is to clone the repo either by clicking the green button in the top-right corner labeled `Clone or download` and selecting the `Download ZIP` option or by running `git clone https://github.com/HPSI-DataSci/HPSI-Classification.git` in your terminal. If you chose to download a ZIP file, then be sure to extract the contents by unzipping it. Next, move the directory for the repository to your desktop. 
+The first step is to clone the repo either by clicking the green button in the top-right corner labeled `Clone or download` and selecting the `Download ZIP` option or by running `git clone https://github.com/HPSI-DataSci/HPSI-Classification.git` in your terminal (Anaconda Prompt). If you chose to download a ZIP file, then be sure to extract the contents by unzipping it. Next, move the directory for the repository to your desktop. 
 
 ### Windows Instructions
 
-Open up a terminal (Command Prompt/Anaconda Prompt/Git Bash/Powershell/etc.). Navigate to the directory for the repository: 
+Open up **Anaconda Prompt**. Navigate to the directory for the repository: 
 `
 cd C:\Users\User\Desktop\HPSI-Classification-Master
 `
@@ -56,7 +56,7 @@ Using TensorFlow backend.
 [SUCCESS] Your virtual environment is ready to go!
 ```
 
-If your environment is set up and running, you can deactivate it with either `source deactivate` or 
+If your environment is set up and running, you can deactivate it with either `deactivate` or 
 `conda deactivate` (the matching command for whichever `activate` command you used before).
 
 ### Mac Instructions
